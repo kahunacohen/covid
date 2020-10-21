@@ -20,7 +20,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "echo 'TODO: write some tests!' #react-scripts test",
     "eject": "react-scripts eject",
     "prettier": "find . -path ./node_modules -prune -false -o -name '*.ts' -o -name '*.json' -o -name '*.tsx' -o -name '*.html' -o -name '*.js' -o -name '*.css' | tr '\n' ' ' | xargs prettier --write"
   },
@@ -45,8 +45,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run prettier",
-      "pre-push": "npm run prettier"
+      "pre-commit": "npm run prettier && npm test",
+      "pre-push": "npm test"
     }
   }
 }
