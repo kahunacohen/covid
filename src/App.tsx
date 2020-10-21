@@ -1,15 +1,12 @@
 import React from "react";
+import { Footer } from "./shared/footer/Footer";
+import { Header } from "./shared/header/Header";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>This is header</p>
-      </header>
-
-      <footer className="App-header">
-        <p>This is footer</p>
-      </footer>
+      <Header />
+      <Footer />
     </div>
   );
 }

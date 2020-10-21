@@ -32,6 +32,7 @@ Because of this it's important to keep some best practices in mind:
 
 - [React](https://reactjs.org/)
 - [Typescript](https://www.typescriptlang.org/)
+- [JSX & Typescript](https://www.typescriptlang.org/docs/handbook/jsx.html)
 - [Jest](https://jestjs.io/)
 - [Test Utilities](https://ru.react.js.org/docs/test-utils.html)
 - [Redux](https://redux.js.org/)
