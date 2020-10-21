@@ -35,6 +35,8 @@ Because of this it's important to keep some best practices in mind:
 - [Jest](https://jestjs.io/)
 - [Test Utilities](https://ru.react.js.org/docs/test-utils.html)
 - [Redux](https://redux.js.org/)
+- [mpjs](https://mountainpass.github.io/mpjs/)
+- [Bootstrap](https://getbootstrap.com/)
 
 ## Available Scripts
 
