@@ -1,4 +1,40 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# COVID
+
+A ReactJs app for treating COVID.
+
+## Install
+
+1. [Install](https://github.com/nvm-sh/nvm#installing-and-updating) Node Version Manager (nvm) if it's not already installed.
+1. Checkout this repo and `cd` into it.
+1. `$ nvm use`.
+
+## Best Practices
+
+ReactJs is different than most MVC frameworks such as Angular Rails etc. because it does not use separate templates and is not particularly opinionated.
+Because of this it's important to keep some best practices in mind:
+
+- **UI**: Before coding a feature think UI-centered. What components do you need? How does
+  each UI section relate to a component?
+- **Input/Output**: React is inspired by functional progrmaming. Think of each component as a function
+  with inputs and outputs. The inputs are props, the outputs are JSX. This also
+  helps you test more easily. Given a set of props, what JSX do you expect the
+  componet to return?
+- **state**: There are several ways to handle **shared** state between components.
+  1. pass data/behavior as props to children
+  2. pass up data/behavior to parent components as callbacks in props.
+  3. Redux. I recommend not using redux until you realize you need it. You might
+     see you need it when your component tree becomes complex enough that you find yourself handling state by passing props through several children just to be used
+     by the last child...or you need to share state between silbing components...or you
+     need a simple and common way to re-render several different components when state
+     changes.
+
+## Links:
+
+- [React](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Jest](https://jestjs.io/)
+- [Test Utilities](https://ru.react.js.org/docs/test-utils.html)
+- [Redux](https://redux.js.org/)
 
 ## Available Scripts
 
@@ -42,3 +78,27 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `yarn build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
