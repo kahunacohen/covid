@@ -1,22 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./index.css";
+import { Nav } from "./Nav";
 
 export function Header() {
   return (
     <header className="App-header">
-      <ul className="nav">
-        <li className="nav-item">
-          <Link className="nav-link" to="/screen1">
-            Screen1
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="/screen2">
-            Screen2
-          </Link>
-        </li>
-      </ul>
+      <Nav />
     </header>
   );
 }
