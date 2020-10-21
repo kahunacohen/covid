@@ -11,7 +11,6 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "@types/react-router-dom": "^5.1.6",
-    "prettier": "^2.1.2",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-router-dom": "^5.2.0",
@@ -23,8 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "x": "find ./ -path ./node_modules -prune -false -o -name '*.ts'",
-    "prettier": "find . -path ./node_modules -prune -false -o -name '*.ts' -o -name '*.tsx' -o -name '*.html' -o -name '*.js' -o -name '*.css' | tr '\n' ' ' | xargs prettier --write"
+    "prettier": "find . -path ./node_modules -prune -false -o -name '*.ts' -o -name '*.json' -o -name '*.tsx' -o -name '*.html' -o -name '*.js' -o -name '*.css' | tr '\n' ' ' | xargs prettier --write"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -40,5 +38,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "prettier": "^2.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier",
+      "pre-push": "npm run prettier"
+    }
   }
 }
