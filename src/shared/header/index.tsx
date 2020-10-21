@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./index.css";
 
 export function Header() {
@@ -6,14 +7,14 @@ export function Header() {
     <header className="App-header">
       <ul className="nav">
         <li className="nav-item">
-          <a className="nav-link active" href="#">
-            Screen 1
-          </a>
+          <Link className="nav-link" to="/screen1">
+            Screen1
+          </Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
-            Screen 2
-          </a>
+          <Link className="nav-link" to="/screen2">
+            Screen2
+          </Link>
         </li>
       </ul>
     </header>
