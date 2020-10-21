@@ -38,6 +38,7 @@ Because of this it's important to keep some best practices in mind:
 - [Redux](https://redux.js.org/)
 - [mpjs](https://mountainpass.github.io/mpjs/)
 - [Bootstrap](https://getbootstrap.com/)
+- [React Router](https://reactrouter.com/)
 
 ## Available Scripts
 
