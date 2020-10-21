@@ -13,6 +13,7 @@ A ReactJs app for treating COVID.
 ReactJs is different than most MVC frameworks such as Angular Rails etc. because it does not use separate templates and is not particularly opinionated.
 Because of this it's important to keep some best practices in mind:
 
+- **Code Formatting**: No discussion here; it's done for you every time you commit or push using [prettier](https://prettier.io/) and [husky](https://github.com/typicode/husky#readme). There's no reason to have crappily formatted code or argue over it. The computer does the monkeywork for you.
 - **UI**: Before coding a feature think UI-centered. What components do you need? How does
   each UI section relate to a component?
 - **Input/Output**: React is inspired by functional progrmaming. Think of each component as a function
